@@ -13,6 +13,7 @@
 		31F1CA3727F6B41B00988BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F1CA3527F6B41B00988BDE /* Main.storyboard */; };
 		31F1CA3927F6B41C00988BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F1CA3827F6B41C00988BDE /* Assets.xcassets */; };
 		31F1CA3C27F6B41C00988BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F1CA3A27F6B41C00988BDE /* LaunchScreen.storyboard */; };
+		E90129102B5C44A1436EC885 /* Pods_Tracki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B060D7F0F0B8B15E5C433F2 /* Pods_Tracki.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		31F1CA3827F6B41C00988BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31F1CA3B27F6B41C00988BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F1CA3D27F6B41C00988BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B060D7F0F0B8B15E5C433F2 /* Pods_Tracki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tracki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		727350796F979ABDA5EC83D7 /* Pods-Tracki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracki.debug.xcconfig"; path = "Target Support Files/Pods-Tracki/Pods-Tracki.debug.xcconfig"; sourceTree = "<group>"; };
+		D4BB561D9CF617D0DBCF54C8 /* Pods-Tracki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracki.release.xcconfig"; path = "Target Support Files/Pods-Tracki/Pods-Tracki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90129102B5C44A1436EC885 /* Pods_Tracki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				31F1CA2E27F6B41B00988BDE /* Tracki */,
 				31F1CA2D27F6B41B00988BDE /* Products */,
+				EA23211CA3C44CFAD547910E /* Pods */,
+				4BB1FF04626A8E4EF7A13E48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Tracki;
 			sourceTree = "<group>";
 		};
+		4BB1FF04626A8E4EF7A13E48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B060D7F0F0B8B15E5C433F2 /* Pods_Tracki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA23211CA3C44CFAD547910E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727350796F979ABDA5EC83D7 /* Pods-Tracki.debug.xcconfig */,
+				D4BB561D9CF617D0DBCF54C8 /* Pods-Tracki.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31F1CA4027F6B41C00988BDE /* Build configuration list for PBXNativeTarget "Tracki" */;
 			buildPhases = (
+				1A4202195631908EF0D25DD0 /* [CP] Check Pods Manifest.lock */,
 				31F1CA2827F6B41B00988BDE /* Sources */,
 				31F1CA2927F6B41B00988BDE /* Frameworks */,
 				31F1CA2A27F6B41B00988BDE /* Resources */,
+				00F87A0C7E6F772164C7EE38 /* [CP] Embed Pods Frameworks */,
+				E671E17D1E70991B27823367 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F87A0C7E6F772164C7EE38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A4202195631908EF0D25DD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tracki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E671E17D1E70991B27823367 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tracki/Pods-Tracki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31F1CA2827F6B41B00988BDE /* Sources */ = {
@@ -282,6 +369,7 @@
 		};
 		31F1CA4127F6B41C00988BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727350796F979ABDA5EC83D7 /* Pods-Tracki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +398,7 @@
 		};
 		31F1CA4227F6B41C00988BDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BB561D9CF617D0DBCF54C8 /* Pods-Tracki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
