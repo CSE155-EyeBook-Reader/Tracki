@@ -11,67 +11,61 @@
 
 ## Overview
 ### Description
-Tracks what music an individual listens to, and pairs them with others based on that music. Could be potentially used as a dating app, or just meeting new friends with similar music tastes.
+Application that enables to control an e-book reader through the use of a user’s eyes. Tracks and provides interactions in application.
 
 ### App Evaluation
-- **Category:** Social Networking / Music
-- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
-- **Story:** Analyzes users music choices, and connects them to other users with similar choices. The user can then decide to message this person and befriend them if wanted.
-- **Market:** Any individual could choose to use this app, and to keep it a safe environment, people would be organized into age groups.
-- **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their social life is, and what exactly they're looking for.
-- **Scope:** First we would start with pairing people based on music taste, then perhaps this could evolve into a music sharing application as well to broaden its usage. Large potential for use with spotify, apple music, or other music streaming applications.
+- **Category:** Books and Reference
+- **Mobile:** This app is primarily developed as a mobile application but would be viable as a desktop application or an android application. Functionality and features are not just limited to mobile devices.
+- **Story:** Stores a users e-books through a pdf, and provides optionality to upload new pdfs. User can then open an e-book and allow user to scroll through book and exit reading through use of eyes.
+- **Market:**  Any individual could choose to use and read through this app. Usable for users of all age demographics.
+- **Habit:** This app could be used as often or often as user wants depending on a users physical ability or limitations.
+- **Scope:** First we would start with selecting a book then we would then calibrate our eye tracking application to prepare for reading. A new windows then would be opened with the e-book to read which can now be controlled with the user’s eyes to scroll and also exit the book.
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* User logs in to access previous chats and preference settings
-* User picks what their favorite artist/genre/etc. (Think Spotify interface)
-* Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
-* Profile pages for each user
-* Settings (Accesibility, Notification, General, etc.)
+* User logs in to access already uploaded books or registers an account.
+* User has option to pick a book to read or upload a new book to their list of stored books
+* When reading a book user can use eyes to look down and up and scroll to bottom or up respectively.
+* When preparing to exit, reader will focus on button and after few milliseconds is exited out of e-book. 
 
 **Optional Nice-to-have Stories**
 
-* Log of past songs/people with album art covers matching
-* Page of most played songs (i.e. songs that most users are connecting through)
-* Profile Add-On: Top music choices, etc.
-* Optional Shuffle Button (i.e. random encounter/random song)
-* Listening/Encounter Queue
+* User can focus on certain area of reading and then highlight looked on section.
+* User can focus on buttons on bottom left and bottom right  to go back and forward on pages.
+* Have screen atmosphere toggle during certain points of day morning/night.
 
 ### 2. Screen Archetypes
 
-* Login 
+* Login - Login an already registered user
 * Register - User signs up or logs into their account
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
+   * Upon Registering the user is prompted to log in to gain access to the homepage.
    * ...
-* Messaging Screen - Chat for users to communicate (direct 1-on-1)
-   * Upon selecting music choice users matched and message screen opens
-* Profile Screen 
-   * Allows user to upload a photo and fill in information that is interesting to them and others
-* Song Selection Screen.
-   * Allows user to be able to choose their desired song, artist, genre of preference and begin listening and interacting with others.
-* Settings Screen
-   * Lets people change language, and app notification settings.
+* Homepage - Allows user to see the list of books and then upload a new book if desired. 
+  * Upon clicking an already uploaded book it directs to calibration page.
+* Calibration - Calibrates the eye tracker as it prepares to start the reading/interaction process with the book.
+* Reading - Lets reader scroll up and down when looking up and down. 
+  * Upon focusing on the button for a certain time they can exit the application.
+
 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
+**Tab Navigation** (Tab to Home)
 
-* Music selection
-* Profile
-* Settings
+* Book Selection
+* Login/Register
+* Book Upload
 
 Optional:
-* Music/Encounter Queue
-* Discover (Top Choices)
+* N/A
 
 **Flow Navigation** (Screen to Screen)
 * Forced Log-in -> Account creation if no log in is available
-* Music Selection (Or Queue if Optional) -> Jumps to Chat
-* Profile -> Text field to be modified. 
-* Settings -> Toggle settings
+* Home Page  - Book Selection or book upload if needed
+* Calibration - Prepares eye tracker for reading
+* Reading -> Read and interact with book
 
 ## Wireframes
 <img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
