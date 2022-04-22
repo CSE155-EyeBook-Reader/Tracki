@@ -2,7 +2,7 @@
 //  SignUpController.swift
 //  PDFViewer
 //
-//  Created by Jonathan Ballona Sanchez on 4/16/22.
+//  Created by Jonathan Ballona Sanchez on 4/22/22.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import Parse
 
 class SignUpController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmationTextField: UITextField!
     
@@ -19,13 +19,12 @@ class SignUpController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func signUp(_ sender: Any) {
-    
+    @IBAction func onSignUp(_ sender: Any) {
         if passwordTextField.text == passwordConfirmationTextField.text {
             let user = PFUser()
-            user.username = userNameTextField.text!
-            user.password = passwordTextField.text!
-            user["firstName"] = nameTextField.text!
+            user["name"] = nameTextField.text
+            user.username = usernameTextField.text
+            user.password = passwordTextField.text
             
             
             user.signUpInBackground { (success, error) in
@@ -36,10 +35,11 @@ class SignUpController: UIViewController {
                 }
                 
             }
-        } else {
-            print("Error: Password and PasswordConfirmation don't match")
+        }else{
+            print("Error: passwords not match")
         }
     }
+    
 
     /*
     // MARK: - Navigation

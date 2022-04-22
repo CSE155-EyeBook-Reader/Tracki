@@ -2,33 +2,25 @@
 //  LoginController.swift
 //  PDFViewer
 //
-//  Created by Jonathan Ballona Sanchez on 4/16/22.
+//  Created by Jonathan Ballona Sanchez on 4/22/22.
 //
 
 import UIKit
 import Parse
-import simd
 
-class LoginController: UIViewController, UITextFieldDelegate{
-    @IBOutlet weak var userNameTextField: UITextField!
+class LoginController: UIViewController {
+
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        return passwordTextField.resignFirstResponder()
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    
-    @IBAction func signIn(_ sender: Any) {
-        let username = userNameTextField.text!
+    @IBAction func onSignIn(_ sender: Any) {
+        let username = usernameTextField.text!
         let password = passwordTextField.text!
         
         PFUser.logInWithUsername(inBackground: username, password: password) {
@@ -39,8 +31,6 @@ class LoginController: UIViewController, UITextFieldDelegate{
                 print("Error: \(error?.localizedDescription)")
             }
         }
-        
-        
     }
     
 

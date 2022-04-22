@@ -34,7 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
                                 <connections>
-                                    <action selector="signIn:" destination="37M-y1-Ra4" eventType="touchUpInside" id="hTy-8M-sVI"/>
+                                    <action selector="onSignIn:" destination="37M-y1-Ra4" eventType="touchUpInside" id="9R6-nt-baK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-rB-XNX">
@@ -66,8 +66,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Pl-jX-vPS"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="t0F-al-o7W" id="vyf-du-V1B"/>
-                        <outlet property="userNameTextField" destination="cCQ-d0-cmY" id="nBe-8N-M9N"/>
+                        <outlet property="passwordTextField" destination="t0F-al-o7W" id="ISl-S2-asB"/>
+                        <outlet property="usernameTextField" destination="cCQ-d0-cmY" id="yWG-Qx-B4U"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loginSegue" id="QNM-YW-GWw"/>
                     </connections>
                 </viewController>
@@ -120,7 +120,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
-                                    <action selector="signUp:" destination="ppt-H1-bRf" eventType="touchUpInside" id="Ely-S0-j6p"/>
+                                    <action selector="onSignUp:" destination="ppt-H1-bRf" eventType="touchUpInside" id="i6A-gJ-nux"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,10 +129,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="5gM-tz-anX"/>
                     <connections>
-                        <outlet property="nameTextField" destination="fc4-YO-2WH" id="68Y-jN-yOb"/>
-                        <outlet property="passwordConfirmationTextField" destination="Fat-Db-Owu" id="MdF-0H-dBw"/>
-                        <outlet property="passwordTextField" destination="hnS-lS-Vsd" id="3AQ-cN-mal"/>
-                        <outlet property="userNameTextField" destination="pxE-n6-Gw2" id="98k-8D-p1M"/>
+                        <outlet property="nameTextField" destination="fc4-YO-2WH" id="Tlj-ls-lv5"/>
+                        <outlet property="passwordConfirmationTextField" destination="Fat-Db-Owu" id="gkN-0M-gaG"/>
+                        <outlet property="passwordTextField" destination="hnS-lS-Vsd" id="fRy-f2-Dbf"/>
+                        <outlet property="usernameTextField" destination="pxE-n6-Gw2" id="hoa-5I-30G"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="signUpSegue" id="QWd-ni-U8a"/>
                     </connections>
                 </viewController>
